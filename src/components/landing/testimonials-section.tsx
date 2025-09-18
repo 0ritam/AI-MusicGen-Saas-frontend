@@ -94,7 +94,7 @@ export function TestimonialsSection() {
                 
                 {/* Rating */}
                 <div className="flex items-center gap-1 mt-3">
-                  {[...Array(testimonial.rating)].map((_, i) => (
+                  {Array.from({ length: testimonial.rating }, (_, i) => (
                     <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" />
                   ))}
                 </div>
@@ -105,7 +105,7 @@ export function TestimonialsSection() {
                 <div className="relative">
                   <Quote className="absolute -top-2 -left-1 h-6 w-6 text-violet-200 dark:text-violet-800" />
                   <CardDescription className="text-gray-700 dark:text-gray-300 leading-relaxed pl-5 italic">
-                    "{testimonial.content}"
+                    &ldquo;{testimonial.content}&rdquo;
                   </CardDescription>
                 </div>
 
