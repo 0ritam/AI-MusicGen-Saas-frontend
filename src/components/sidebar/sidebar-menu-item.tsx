@@ -10,7 +10,7 @@ export default function SidebarMenuItems() {
   let items = [
     {
       title: "Home",
-      url: "/",
+      url: "/dashboard",
       icon: Home,
       active: false,
     },
